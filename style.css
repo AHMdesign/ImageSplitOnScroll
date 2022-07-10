@@ -1,0 +1,54 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  min-height: 500vh;
+}
+section{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+z-index: 1000;
+pointer-events: none;
+}
+
+section .side{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(1.png);
+  background-repeat: no-repeat;
+}
+
+section .side#side1{
+  clip-path: polygon(0 0, 43% 0, 16% 100%, 0% 100%);
+}
+
+section .side#side2{
+  clip-path: polygon(100% 0, 43% 0, 16% 100%, 100% 100%);
+}
+
+.contentBx{
+  background: black;
+  color: white;
+  padding: 100px;
+  padding-top: 150vh;
+}
+
+.contentBx h2{
+  position: relative;
+  font-size: 4em;
+}
+
+.contentBx p{
+  position: relative;
+  font-size: 1.2em;
+}
